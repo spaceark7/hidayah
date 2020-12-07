@@ -1,0 +1,103 @@
+.contact-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wrapper {
+  height: 100vh;
+  display: flex;
+  margin-bottom: 0;
+}
+.contact-wrapper .bx {
+  transition: 1s;
+}
+.contact-wrapper .bx:hover {
+  width: 60%;
+}
+.left-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.left-text-bx p {
+  color: white;
+  text-align: center;
+}
+.right-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c9c8;
+}
+
+.right-text h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.contact-title {
+  color: #333;
+  font-size: 5em;
+  font-weight: 800;
+  text-align: center;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00c9c8, 0 0 20px #00c9c8, 0 0 40px #00c9c8,
+      0 0 80px #00c9c8, 0 0 160px #00c9c8;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 425px) {
+  .contact-wrapper {
+    display: block;
+  }
+  .contact-wrapper .bx:hover {
+    width: 100%;
+  }
+  .right-text h2 {
+    font-size: 1.5em;
+  }
+  .right-text p {
+    font-size: 0.9em;
+  }
+  .right-text h2,
+  p {
+    text-align: center;
+  }
+}

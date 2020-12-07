@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+.material-icons {
+  color: #3b2314;
+}
+.second-color {
+  background-color: white !important;
+  z-index: 100;
+  position: sticky;
+    top: 0;
+}
+
+.brand-logo {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.brand-logo p {
+  font-size: 30px;
+    color: #1178B0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.logo-pct {
+  padding: 10px;
+  width: 10%;
+}
+
+nav ul a {
+  color: #1178B0;
+  font-weight: 500;
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 100%;
+    justify-content: center;
+    display: flex !important;
+  }
+  .logo-pct {
+    width: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-pct {
+    width: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-pct {
+    width: 40%;
+  }
+}

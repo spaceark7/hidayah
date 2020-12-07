@@ -1,0 +1,13 @@
+.home-banner {
+  background: url('/assets/banner-bg.jpg');
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.home-banner img {
+  width: 20%;
+}
