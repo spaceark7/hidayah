@@ -52,6 +52,30 @@ nav .nav-wrapper {
   max-width: 100%;
 }
 
+.footer {
+  max-width: 100% !important;
+  margin: 0;
+  height: 500px;
+  
+  background-color: #1178B0;
+  width: 100%;
+}
+.footer-bx {
+  width: 100%;
+  max-width: 100%;
+  background: url('/assets/footer-bg_1.png') no-repeat 20% 20%;
+  background-size: cover;
+  height: 100%;
+}
+.left-footer {
+  text-align: center;
+}
+.mid-footer {
+  text-align: center;
+}
+.right-footer {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .brand-logo {
     height: 100%;

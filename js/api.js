@@ -1,20 +1,22 @@
+console.log('executed toogle');
+const imgBx = document.querySelectorAll('.imageBox');
+console.log('ibx: ', imgBx)
+imgBx.forEach(popup => popup.addEventListener('click', () => {
+    console.log('popup:', popup)
+    popup.classList.toggle('active')
+}))
 
-
-function ChangeImage(any) {
-    let imgCont = document.querySelector('#imgCont');
-    imgCont.src = any;
-    
+function PopUp() {
+    console.log('executed toogle');
+    const imgBx = document.querySelectorAll('.imageBox');
+    console.log('ibx: ', imgBx)
+    imgBx.forEach(popup => popup.addEventListener('click', () => {
+        console.log('popup:', popup)
+        popup.classList.toggle('active')
+    }))
 }
 
-function ChangeCircleColor(color) {
-    document.querySelector('.circle').style.background = color;
+function Pop() {
+    console.log('clicked', this)
+    PopUp()
 }
-
-
-
-
-
-
-
-
-
