@@ -3,7 +3,7 @@
   background-size: cover;
   margin: 0;
   height: 100vh;
-
+  overflow: hidden;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .main-banner h2 {
   color: #1178b0;
@@ -46,6 +47,7 @@
   height: 100%;
   padding: 60px;
   margin: 0;
+  overflow: hidden;
 }
 .second .main-title {
   text-align: center;
@@ -60,6 +62,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
 .card {
   width: 340px;
@@ -165,6 +168,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px;
+  overflow: hidden;
 }
 
 .tentang h2 {
@@ -179,6 +183,7 @@
   width: calc(100% - 200px) !important;
   height: calc(100% - 200px);
   /* background-color: #1178b0; */
+  overflow: hidden;
 }
 .tentang-content .box {
   position: relative;
@@ -186,7 +191,6 @@
   height: 100%;
   overflow: hidden;
   border-right: 10px solid  #3B4856 ;
-  
   transition: ease-out 1s;
 }
 .tentang-content .box:hover {
@@ -231,10 +235,140 @@
 .tentang-text p {
   font-size: 20pt;
 }
+.tentang-text .imgbx {
+  overflow: hidden;
+}
 .tentang-text .imgbx img {
   height: 100%;
   object-fit: contain;
   position: relative;
   left: -20%;
 }
+
+@media (max-width: 1024px) {
+  .home-banner img {
+    width: 241px;
+  }
+  .main-banner h2 {
+    
+    font-size: 79px;
+    
+}
+.home-banner p {
+  font-size: 20px;
+  bottom: 20%;
+}
+
+.card {
+  width: 242px;
+  height: 414px;
+}
+
+.card:hover .card-bottom {
+  height: 255px;
+}
+
+.tentang-text h2 {
+  font-size: 62px;
+}
+
+.tentang-text p {
+  font-size: 24px;
+}
+
+
+}
+
+@media (max-width: 768px) {
+  .home-banner img {
+    width: 158px;
+  }
+
+  .main-banner h2 {
+    font-size: 60px;
+  }
+  .home-banner p {
+    font-size: 18px;
+    left: 40%;
+  }
+
+  .card {
+    width: 181px;
+    height: 414px;
+  }
+
+  .tentang-text h2 {
+    font-size: 47px;
+  }
+
+  .tentang-text p {
+    font-size: 18px;
+  }
+
+  .tentang-text .imgbx img {
+    
+    left: -60%;
+}
+
+.footer-bx p {
+  font-size: 11px;
+}
+
+}
+
+@media (max-width: 425px) {
+  .main-banner {
+    display: block;
+  }
+  .home-banner img {
+    position: relative;
+    left: 30%;
+    top: 20%;
+  }
+  .main-banner h2 {
+    position: relative;
+    text-align: center;
+    top: 20%;
+  }
+  .home-banner p {
+    left: 15%;
+    font-size: 12px;
+
+  }
+
+  .second {
+    overflow: visible;
+  }
+  .second .main-title {
+    font-size: 30px;
+  }
+  .card .card-bottom h2 {
+    font-size: 23px;
+  }
+  
+    .card-container {
+      display: block;
+      overflow: none;
+    }
+    .card {
+      width: 300px;
+    }
+    .card .card-bottom {
+      height: 90px;
+    }
+    .card:hover .card-bottom {
+      height: 200px;
+    }
+
+    .tentang h2 {
+      font-size: 23px;
+      text-align: center;
+    }
+
+    
+
+}
+
+
+
 
